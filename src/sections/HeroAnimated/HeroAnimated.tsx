@@ -11,13 +11,9 @@ import {
 import HeroParticles from "./HeroParticles.tsx"
 import "./HeroAnimated.scss"
 
-// Apple-like "expo out" easing: fast start, long soft landing.
 const EASE = [0.22, 1, 0.36, 1] as const
 
-// Sticky header: 72px nav + 1px border (see Header.scss). Keep in sync.
-const HEADER_HEIGHT = 73
-
-/* ---------- Content: edit this, not the markup ---------- */
+const HEADER_HEIGHT = 72
 
 interface HeroLink {
     label: string
@@ -35,20 +31,18 @@ interface Profile {
 }
 
 const profile: Profile = {
-    eyebrow: "hello! i'm",
-    name: "Said Makhov",
-    role: "full-stack developer",
+    eyebrow: "привет! я",
+    name: "Саид Махов",
+    role: "full-stack разработчик",
     description:
-        "I build web apps with React, TypeScript and ASP.NET Core, from the interface down to the database.",
+        "Я разрабатываю веб-приложения с использованием React, TypeScript и ASP.NET Core — от пользовательского интерфейса до базы данных.",
     // status: "open to work",
-    cta: { label: "get in touch", href: "#contact" },
+    cta: { label: "свяжитесь с мной", href: "#contact" },
     links: [
         { label: "github", href: "https://github.com/SpidX9226" },
         { label: "hh", href: "https://hh.ru/" }, // TODO: link to your hh.ru résumé
     ],
 }
-
-/* ---------- Variants (load sequence) ---------- */
 
 const stack: Variants = {
     hidden: {},
@@ -65,7 +59,6 @@ const fadeUp: Variants = {
     },
 }
 
-// The name: each word rises out of its own mask.
 const nameGroup: Variants = {
     hidden: {},
     show: { transition: { staggerChildren: 0.09 } },
@@ -176,6 +169,7 @@ export default function Hero() {
                                     >
                                         {link.label}
                                     </a>
+
                                 ))}
                             </div>
                         </motion.div>

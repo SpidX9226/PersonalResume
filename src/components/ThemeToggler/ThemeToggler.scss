@@ -1,12 +1,12 @@
 .theme-toggler {
-  background-color: var(--surface);
+  background-color: var(--background);
   color: var(--muted);
 
   display: flex;
   align-items: center;
   gap: 10px;
 
-  border: 1px solid var(--border);
+  border: 1px solid var(--background);
   border-radius: 6px;
 
   padding: 6px 12px;

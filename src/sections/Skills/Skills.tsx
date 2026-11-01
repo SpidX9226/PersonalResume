@@ -11,9 +11,18 @@ export default function Skills() {
                 <h2 className="section__title">Навыки</h2>
 
                 <div className="skills__showcase">
-                    <SkillsScroll path="/data/skillLangs.json" is_direction_left={true} />
-                    <SkillsScroll path="/data/skillLangs.json" is_direction_left={false} />
-                    <SkillsScroll path="/data/skillLangs.json" is_direction_left={true} />
+                    <SkillsScroll
+                        path={`${import.meta.env.BASE_URL}data/skillLangs.json`}
+                        is_direction_left={true}
+                    />
+                    <SkillsScroll
+                        path={`${import.meta.env.BASE_URL}data/skillLangs.json`}
+                        is_direction_left={false}
+                    />
+                    <SkillsScroll
+                        path={`${import.meta.env.BASE_URL}data/skillLangs.json`}
+                        is_direction_left={true}
+                    />
                 </div>
             </div>
 
