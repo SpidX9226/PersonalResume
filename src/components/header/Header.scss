@@ -1,0 +1,40 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background-color: var(--header-color);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border);
+  margin: auto 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__nav {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    height: 48px;
+    width: 48px;
+  }
+
+  &__zone {
+    color: var(--accent);
+  }
+}

@@ -1,0 +1,34 @@
+.theme-toggler {
+  background-color: var(--surface);
+  color: var(--muted);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  padding: 6px 12px;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease-out;
+
+  &__logo {
+    transition: 2s ease-out;
+  }
+
+  &:hover {
+    border-color: var(--primary);
+    background: var(--surface-hover);
+    color: var(--accent);
+
+    .theme-toggler__logo {
+      transform: rotate(180deg);
+    }
+  }
+}

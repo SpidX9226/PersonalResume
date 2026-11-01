@@ -1,0 +1,77 @@
+@use "_themes.scss";
+@use "_fonts.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "JetBrains Mono Nerd", Inter, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.2s ease-out;
+
+  &.primary {
+    background-color: var(--accent);
+    color: var(--text);
+  }
+
+  &.primary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-3px);
+  }
+
+  &.secondary {
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  &.secondary:hover {
+    border: 1px solid var(--accent-hover);
+    background: var(--surface-hover);
+    transform: translateY(-3px);
+  }
+}
+
+.section {
+  padding: 120px 0;
+  border-top: 1px solid var(--border);
+
+  &__label {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+}

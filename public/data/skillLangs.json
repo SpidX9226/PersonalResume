@@ -1,0 +1,37 @@
+[
+  {
+    "img_path": "/logos/cpp_logo.svg",
+    "title": "C++",
+    "desc": "C++23"
+  },
+  {
+    "img_path": "/logos/cs_logo_test.webp",
+    "title": "C#",
+    "desc": ".net11"
+  },
+  {
+    "img_path": "/logos/c_logo.svg",
+    "title": "C",
+    "desc": "C++23"
+  },
+  {
+    "img_path": "/logos/ts_logo.webp",
+    "title": "TypeScript",
+    "desc": "TS"
+  },
+  {
+    "img_path": "/logos/python_logo.webp",
+    "title": "python",
+    "desc": "python3"
+  },
+  {
+    "img_path": "/logos/nasm.svg",
+    "title": "Assembly",
+    "desc": "NASM"
+  },
+  {
+    "img_path": "/logos/js_logo.webp",
+    "title": "JavaScript",
+    "desc": "JS"
+  }
+]

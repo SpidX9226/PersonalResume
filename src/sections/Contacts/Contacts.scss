@@ -1,0 +1,143 @@
+.contact {
+  &__lead {
+    max-width: 750px;
+    margin-bottom: 40px;
+    color: var(--muted);
+    font-size: 18px;
+  }
+
+  // Primary contact method: the one thing a visitor should not miss.
+  &__telegram {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 16px;
+    padding: 30px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+
+  &__telegram-label {
+    margin-bottom: 6px;
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  &__telegram-address {
+    color: var(--accent);
+    font-size: clamp(20px, 3.2vw, 30px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    overflow-wrap: anywhere;
+    transition: color 0.25s;
+
+    &:hover {
+      color: var(--accent-hover);
+    }
+  }
+
+  &__email {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 16px;
+    padding: 30px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+
+  &__email-label {
+    margin-bottom: 6px;
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  &__email-address {
+    color: var(--accent);
+    font-size: clamp(20px, 3.2vw, 30px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    overflow-wrap: anywhere;
+    transition: color 0.25s;
+
+    &:hover {
+      color: var(--accent-hover);
+    }
+  }
+
+  // Layout comes from the global .btn.secondary; this only fixes native <button> defaults.
+  &__copy {
+    color: var(--text);
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 6px;
+    padding: 24px 30px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: transform 0.25s, background-color 0.25s, border-color 0.25s;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+      background: var(--surface-hover);
+    }
+  }
+
+  &__link-label {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  &__link-handle {
+    color: var(--accent);
+    font-size: 18px;
+    overflow-wrap: anywhere;
+  }
+
+  // Visible keyboard focus on every interactive element.
+  &__email-address:focus-visible,
+  &__copy:focus-visible,
+  &__link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__email-address,
+    &__link {
+      transition: none;
+    }
+
+    &__link:hover {
+      transform: none;
+    }
+  }
+}

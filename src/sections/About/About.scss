@@ -1,0 +1,9 @@
+.about__content {
+  max-width: 750px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.about__content p + p {
+  margin-top: 18px;
+}

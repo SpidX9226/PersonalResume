@@ -1,0 +1,64 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 260px;
+  height: 100vh;
+
+  padding: 40px 30px;
+
+  border-right: 1px solid var(--border);
+  background-color: var(--background);
+
+  &__nav {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+
+    transition: 0.5s ease-out;
+
+    color: var(--muted);
+  }
+
+  &__link:hover {
+    color: var(--text);
+    background-color: var(--surface);
+  }
+
+  &__dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    flex-shrink: 0;
+
+
+    border-radius: 50%;
+    background-color: var(--muted);
+
+    transition: background-color 0.5s ease-out;
+
+    .sidebar__link:hover & {
+    }
+
+    .sidebar__link.active & {
+      background-color: var(--accent);
+    }
+  }
+}
+
+.sidebar__link.active {
+  color: var(--accent);
+  border-right: 2px solid var(--accent);
+}

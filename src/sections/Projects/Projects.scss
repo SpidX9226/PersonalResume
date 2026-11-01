@@ -1,0 +1,57 @@
+.projects-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.project {
+
+  position: relative;
+  padding: 30px;
+  min-height: 300px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: transform 0.25s, background-color 0.25s, border-color 0.25s;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    background: var(--surface-hover);
+  }
+
+  &__number {
+    color: var(--accent);
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: var(--muted);
+    margin-bottom: 22px;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+
+  &__tags span {
+    padding: 5px 9px;
+    font-size: 12px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 28px;
+    right: 30px;
+    color: var(--accent);
+    font-size: 14px;
+  }
+}
