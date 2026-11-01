@@ -12,7 +12,7 @@ function Header() {
                 </div>
             </nav>
 
-            <ThemeToggler title="clickMe!" />
+            <ThemeToggler />
         </header>
     )
 }
