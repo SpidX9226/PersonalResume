@@ -1,7 +1,7 @@
 .projects-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1.5fr));
+    gap: 20px;
 }
 
 .project {
@@ -9,7 +9,7 @@
   padding: 30px;
   min-height: 300px;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   border-radius: 10px;
   transition: ease-out transform 0.25s, background-color 0.25s, border-color 0.25s;
 

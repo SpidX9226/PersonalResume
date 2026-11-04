@@ -186,10 +186,11 @@
     font-size: 0.95rem;
     font-weight: 700;
     text-decoration: none;
-    transition: background-color 0.25s var(--ease);
+    transition: background-color, box-shadow 0.25s ease-out;
 
     @include hover {
-      background-color: var(--accent-hover);
+      //background-color: var(--accent-hover);
+      box-shadow: 0 8px 20px rgba(167, 170, 255, 0.3);
     }
     @include focus-ring;
   }

@@ -151,9 +151,9 @@ export default function Hero() {
                             <motion.a
                                 className="hero__button"
                                 href={cta.href}
-                                whileHover={reduce ? undefined : { scale: 1.03 }}
-                                whileTap={reduce ? undefined : { scale: 0.97 }}
-                                transition={{ duration: 0.25, ease: EASE }}
+                                whileHover={reduce ? undefined : { translateY: -3 }}
+                                whileTap={reduce ? undefined : { translateY: 2 }}
+                                transition={{ duration: 0.25, ease: "easeOut" }}
                             >
                                 {cta.label}
                             </motion.a>
