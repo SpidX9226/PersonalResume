@@ -7,12 +7,15 @@ import Sidebar from "./sections/Sidebar/Sidebar.tsx";
 import Skills from "./sections/Skills/Skills.tsx";
 import "./styles/global.scss";
 import Experience from "./sections/Experience/Experience.tsx";
+import useMediaQuery from "./hooks/useMediaQuery.ts";
 
 function App() {
+    const isDesktop: boolean = useMediaQuery("(min-width: 761px)");
+
   return (
     <>
         <Header />
-        <Sidebar />
+        {isDesktop && <Sidebar />}
         <main>
             <HeroAnimated />
 

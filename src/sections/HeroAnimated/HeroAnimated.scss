@@ -17,7 +17,6 @@
   // --header-height is set from Hero.tsx (single source of truth).
   // The sidebar is position: fixed on the right (Sidebar.scss), so the hero
   // stops before it instead of sliding underneath.
-  --sidebar-width: 260px;
   --hero-lift: 0; // extra upward nudge for the content (optical centering)
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --on-accent: #0b0d10; // dark text reads well on both the indigo and the orange accent
@@ -42,7 +41,6 @@
     position: sticky;
     top: var(--header-height);
     height: calc(100vh - var(--header-height));
-    height: calc(100svh - var(--header-height));
     display: grid;
     place-items: center;
     // The bottom padding balances the header above, so the content is centered
