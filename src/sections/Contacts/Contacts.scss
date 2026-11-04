@@ -19,6 +19,8 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
+
+    transition: transform 0.25s, background-color 0.25s, border-color 0.25s;
   }
 
   &__telegram-label {
@@ -52,6 +54,8 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
+
+    transition: transform 0.25s, background-color 0.25s, border-color 0.25s;
   }
 
   &__email-label {
@@ -102,7 +106,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
-    transition: transform 0.25s, background-color 0.25s, border-color 0.25s;
+    transition: ease-out transform 0.25s, background-color 0.25s, border-color 0.25s;
 
     &:hover {
       transform: translateY(-5px);
@@ -138,6 +142,24 @@
 
     &__link:hover {
       transform: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    &__copy {
+      display: none !important;
+    }
+    &__telegram:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+      background: var(--surface-hover);
+    }
+    &__email:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+      background: var(--surface-hover);
     }
   }
 }
