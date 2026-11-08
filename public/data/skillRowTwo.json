@@ -2,17 +2,17 @@
   {
     "img_path": "/logos/nodejs_logo.svg",
     "title": "NodeJS",
-    "desc": "temp"
+    "desc": "JS/TS"
   },
   {
     "img_path": "/logos/fastapi_logo.svg",
     "title": "Fast API",
-    "desc": "temp"
+    "desc": "Python"
   },
   {
     "img_path": "/logos/expressjs_logo.svg",
     "title": "Express JS",
-    "desc": "C++23"
+    "desc": "JS/TS"
   },
   {
     "img_path": "/logos/aspdotnet_logo.svg",
