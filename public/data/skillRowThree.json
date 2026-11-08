@@ -1,0 +1,37 @@
+[
+  {
+    "img_path": "/logos/redis_logo.svg",
+    "title": "Redis",
+    "desc": "Cache"
+  },
+  {
+    "img_path": "/logos/cmake_logo.svg",
+    "title": "CMake",
+    "desc": "C/C++ Build System"
+  },
+  {
+    "img_path": "/logos/dotnet_logo.svg",
+    "title": ".NET",
+    "desc": ".net cli"
+  },
+  {
+    "img_path": "/logos/linux_logo.svg",
+    "title": "Linux",
+    "desc": "Linux based OS"
+  },
+  {
+    "img_path": "/logos/postgresql_logo.svg",
+    "title": "Postgres",
+    "desc": "SQL DataBase"
+  },
+  {
+    "img_path": "/logos/docker_logo.svg",
+    "title": "Docker",
+    "desc": "Containerisation system"
+  },
+  {
+    "img_path": "/logos/google_logo.svg",
+    "title": "Google Tests",
+    "desc": "Tests for C++"
+  }
+]

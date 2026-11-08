@@ -16,11 +16,11 @@ export default function Skills() {
                         is_direction_left={true}
                     />
                     <SkillsScroll
-                        path={`${import.meta.env.BASE_URL}data/skillLangs.json`}
+                        path={`${import.meta.env.BASE_URL}data/skillRowTwo.json`}
                         is_direction_left={false}
                     />
                     <SkillsScroll
-                        path={`${import.meta.env.BASE_URL}data/skillLangs.json`}
+                        path={`${import.meta.env.BASE_URL}data/skillRowThree.json`}
                         is_direction_left={true}
                     />
                 </div>

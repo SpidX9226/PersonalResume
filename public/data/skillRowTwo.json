@@ -1,0 +1,37 @@
+[
+  {
+    "img_path": "/logos/nodejs_logo.svg",
+    "title": "NodeJS",
+    "desc": "temp"
+  },
+  {
+    "img_path": "/logos/fastapi_logo.svg",
+    "title": "Fast API",
+    "desc": "temp"
+  },
+  {
+    "img_path": "/logos/expressjs_logo.svg",
+    "title": "Express JS",
+    "desc": "C++23"
+  },
+  {
+    "img_path": "/logos/aspdotnet_logo.svg",
+    "title": "ASP.NET",
+    "desc": ".NET 11"
+  },
+  {
+    "img_path": "/logos/python_logo.webp",
+    "title": "ADO.NET",
+    "desc": ".NET 11"
+  },
+  {
+    "img_path": "/logos/ef_core_logo.svg",
+    "title": "EF Core",
+    "desc": ".NET 11"
+  },
+  {
+    "img_path": "/logos/spring_logo.svg",
+    "title": "Spring",
+    "desc": "Java"
+  }
+]

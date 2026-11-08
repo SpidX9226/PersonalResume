@@ -18,8 +18,7 @@ export default function Projects() {
                         <h3>Task Manager</h3>
 
                         <p>
-                            Веб-приложение для управления задачами,
-                            пользователями и проектами.
+                            Веб-приложение для управления кадастровым сервисом.
                         </p>
 
                         <div className="project__tags">
@@ -28,7 +27,7 @@ export default function Projects() {
                             <span>PostgreSQL</span>
                         </div>
 
-                        <a href="#" className="project__link">
+                        <a href="https://github.com/SpidX9226/CadastralService" className="project__link">
                             GitHub →
                         </a>
                     </Reveal>
@@ -49,7 +48,7 @@ export default function Projects() {
                             <span>Docker</span>
                         </div>
 
-                        <a href="#" className="project__link">
+                        <a href="https://github.com/SpidX9226/WeatherAPI" className="project__link">
                             GitHub →
                         </a>
                     </Reveal>
@@ -86,12 +85,12 @@ export default function Projects() {
                         </p>
 
                         <div className="project__tags">
-                            <span>Java</span>
-                            <span>Spring</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
                             <span>SQL</span>
                         </div>
 
-                        <a href="#" className="project__link">
+                        <a href="https://github.com/Dynalarix/cinema-booking" className="project__link">
                             GitHub →
                         </a>
                     </Reveal>
